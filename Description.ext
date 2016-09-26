@@ -1,0 +1,74 @@
+class CfgRespawnInventory
+{
+    class BLU_RIFLEMAN
+    {
+        displayName = "Rifleman";
+        uniformClass = "rhsgref_uniform_ttsko_forest";
+        backpack = "";
+        weapons[] = {"rhs_weap_m4a1_carryhandle","Throw","Put"};
+        magazines[] = {"rhs_mag_30Rnd_556x45_Mk318_Stanag","rhs_mag_30Rnd_556x45_Mk318_Stanag","rhs_mag_30Rnd_556x45_Mk318_Stanag","rhs_mag_rgd5","rhs_mag_30Rnd_556x45_Mk318_Stanag","rhs_mag_30Rnd_556x45_Mk318_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red","rhs_mag_f1","rhs_mag_f1","rhs_mag_f1","DemoCharge_Remote_Mag"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhsusf_acc_compm4", "rhsgref_6b23_khaki_rifleman","rhsgref_ssh68_ttsko_forest","","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+
+    };
+    
+    class BLU_MARKSMAN
+    {
+        displayName = "Marksman";
+        uniformClass = "rhsgref_uniform_ttsko_forest";
+        backpack = "";
+        weapons[] = {"rhs_weap_svdp_wd","Throw","Put"};
+        magazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_rgd5","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhs_acc_pso1m21", "rhsgref_6b23_khaki_rifleman","rhsgref_ssh68_ttsko_forest","","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+
+    };
+    
+    class BLU_AUTORIFLEMAN
+    {
+        displayName = "Autorifleman";
+        uniformClass = "rhsgref_uniform_ttsko_forest";
+        backpack = "rhs_sidor";
+        weapons[] = {"rhs_weap_pkm","Throw","Put"};
+        magazines[] = {"rhs_mag_f1","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhsgref_6b23_khaki_rifleman","rhsgref_ssh68_ttsko_forest","","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+
+    };
+    
+    class IND_RIFLEMAN
+    {    
+        displayName = "Rifleman";
+        uniformClass = "rhsgref_uniform_woodland";
+        backpack = "";
+        weapons[] = {"rhs_weap_m21a","Throw","Put"};
+        magazines[] = {"rhsgref_30rnd_556x45_m21","rhsgref_30rnd_556x45_m21","rhsgref_30rnd_556x45_m21","rhs_mag_f1","rhs_mag_f1","rhs_mag_f1","rhs_mag_an_m8hc","rhsgref_30rnd_556x45_m21","rhsgref_30rnd_556x45_m21","rhsgref_30rnd_556x45_m21_t","DemoCharge_Remote_Mag"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhs_acc_1p63", "rhsgref_6b23_ttsko_forest_rifleman","rhsgref_6b27m_ttsko_forest","G_Bandanna_tan","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+    };
+    
+    class IND_AUTORIFLEMAN
+    {
+        displayName = "Autorifleman";
+        uniformClass = "rhsgref_uniform_woodland_olive";
+        backpack = "rhsgref_nat_backpack_mg";
+        weapons[] = {"rhs_weap_pkm","Throw","Put"};
+        magazines[] = {"rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhsgref_6b23_ttsko_digi_rifleman","rhsgref_6b27m_ttsko_forest","rhs_balaclava1_olive","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+    };
+    
+    class IND_MARKSMAN
+    {
+        // Exported from Arsenal by Mavrick
+        displayName = "Marksman";
+        uniformClass = "rhsgref_uniform_woodland";
+        backpack = "";
+        weapons[] = {"rhs_weap_svds","Throw","Put"};
+        magazines[] = {"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_f1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_an_m8hc"};
+        items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
+        linkedItems[] = {"rhs_acc_pso1m21", "rhsgref_6b23_ttsko_forest_rifleman","rhsgref_6b27m_ttsko_forest","rhs_balaclava1_olive","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS"};
+
+    };
+};
+
