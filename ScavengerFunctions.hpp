@@ -8,6 +8,7 @@ class CfgFunctions
             class pickupPayload { };
             class deliverPayload { };
             class createPayloadList { };
+            class selectNextPayload { };
         };
 
         class Dropoff

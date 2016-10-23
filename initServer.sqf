@@ -6,7 +6,5 @@
 
 payloads = ["payload", PAYLOAD_MAXIMUM_COUNT] call Scv_fnc_createPayloadList;
 
-[] spawn {
-    sleep 5;
-    [] execVM "payloadSelection.sqf";
-}
+activePayload = [payloads, PAYLOAD_ACTIVATION_TIME] call Scv_fnc_selectNextPayload;
+payloads = payloads - [activePayload];
