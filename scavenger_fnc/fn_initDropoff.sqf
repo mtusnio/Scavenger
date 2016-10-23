@@ -16,6 +16,6 @@ if (!params ["_dropoff"]) exitWith {};
 private _payloadDrop = {
     params ["_dropoff", "_player"];
 
-    [_player] remoteExec ["Mh_fn_deliverPayload", 2];
+    [_player] remoteExec ["Scv_fn_deliverPayload", 2];
 }
 _dropoff addAction [ "Drop payload", _payloadDrop, nil, 6, true, true, "", '!isNil (player getVariable ["Scv_carriedPayload", nil])', 2];
