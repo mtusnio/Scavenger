@@ -7,9 +7,9 @@ if(_payloadCount > 0) then
     
     
     private _informPlayers = {
-        private _selected = _this select 0;
+        private _selected = (_this select 0) + 1;
         private _markerName = format ["payload_marker_%1", _selected];
-        [side player, "HQ"] sideChat "New payload has been identified, it will become active in 8 minutes";
+        [side group player, "HQ"] sideChat "New payload has been identified, it will become active in 8 minutes";
         private _newTask = player createSimpleTask [ format ["payload_task_%1", _selected] ];
         _newTask setSimpleTaskDestination (getMarkerPos _markerName);
         _newTask setSimpleTaskDescription ["", "Intercept payload", "Payload"];
