@@ -1,8 +1,6 @@
-#define MAX_PAYLOADS 10
-
 payloads = [];
 
-for "_i" from 1 to MAX_PAYLOADS do
+for "_i" from 1 to PAYLOAD_MAXIMUM_COUNT do
 {
     private _payloadName = format [ "payload_%1", _i ];
     

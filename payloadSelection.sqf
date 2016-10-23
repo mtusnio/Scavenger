@@ -1,5 +1,3 @@
-#define PAYLOAD_ACTIVATION_TIME 500
-
 private _payloadCount = count payloads;
 
 if(_payloadCount > 0) then
