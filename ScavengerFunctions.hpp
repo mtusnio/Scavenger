@@ -7,6 +7,7 @@ class CfgFunctions
             file = "scavenger_fnc";
             class pickupPayload { };
             class deliverPayload { };
+            class createPayloadList { };
         };
 
         class Dropoff

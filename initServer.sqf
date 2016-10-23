@@ -4,7 +4,7 @@
 [independent, RESPAWN_TICKETS_COUNT] call BIS_fnc_respawnTickets;
 
 
-[] call compile preprocessFileLineNumbers "payloadCreateList.sqf";
+payloads = ["payload", PAYLOAD_MAXIMUM_COUNT] call Scv_fnc_createPayloadList;
 
 [] spawn {
     sleep 5;
