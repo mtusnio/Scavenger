@@ -17,13 +17,13 @@ if(_payloadCount > 0) then
         
     };
     
-    [[_selected], _informPlayers] remoteExec ["bis_fnc_call", 0];
+    [[_selected], _informPlayers] remoteExec ["bis_fnc_call", [0,-2] select isDedicated];
     
     sleep PAYLOAD_ACTIVATION_TIME;
     
     [_payload] execVM "payloadActivate.sqf";
     
-    { [side player, "HQ"] sideChat "Payload is now active!" } remoteExec ["bis_fnc_call", 0];
+    { [side player, "HQ"] sideChat "Payload is now active!" } remoteExec ["bis_fnc_call", [0,-2] select isDedicated];
     
     
 };
