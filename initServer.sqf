@@ -1,7 +1,9 @@
-[west, 20] call BIS_fnc_respawnTickets;
-[independent, 20] call BIS_fnc_respawnTickets;
-
 [] call compile preprocessFileLineNumbers "consts.sqf";
+
+[west, RESPAWN_TICKETS_COUNT] call BIS_fnc_respawnTickets;
+[independent, RESPAWN_TICKETS_COUNT] call BIS_fnc_respawnTickets;
+
+
 [] call compile preprocessFileLineNumbers "payloadCreateList.sqf";
 
 [] spawn {
