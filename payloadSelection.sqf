@@ -21,7 +21,15 @@ if(_payloadCount > 0) then
     
     sleep PAYLOAD_ACTIVATION_TIME;
     
-    [_payload] execVM "payloadActivate.sqf";
+    private _pickupScript = {    
+        private _payload = _this select 0;
+        private _player = _this select 1;
+        
+        [_payload, _player] remoteExec ["Scv_fnc_pickupPayload", 0, false]
+    };
+
+    [_payload, ["Take payload", _pickupScript, nil, 1.5, true, true, "", "true", 1]] remoteExec ["addAction", [0,-2] select isDedicated, true];
+
     
     { [side player, "HQ"] sideChat "Payload is now active!" } remoteExec ["bis_fnc_call", [0,-2] select isDedicated];
     

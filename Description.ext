@@ -1,3 +1,5 @@
+#include "ScavengerFunctions.hpp"
+
 class CfgRespawnInventory
 {
     class BLU_RIFLEMAN
