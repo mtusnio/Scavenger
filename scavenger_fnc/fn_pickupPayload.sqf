@@ -16,11 +16,25 @@ if (!params ["_payload", "_player"]) exitWith {};
 
 if(!isServer || !isDedicated) then
 {
-    [side player, "HQ"] sideChat "Payload has been picked up!";
+    if(player == _player) then
+    {
+        [side player, "HQ"] sideChat "Good job, bring the payload to the extraction zone"
+    }
+    else
+    {
+        if(side group player == side group _player) then
+        {
+            [side player, "HQ"] sideChat "We have picked up the payload";
+        }
+        else
+        {
+            [side player, "HQ"] sideChat "Enemy has the payload, recover it";
+        };
+    };
 };
 
 if(isServer) then
 {
     _payload setPos [0, 0, 0];
-    _player setVariable ["Scv_carriedPayload", _payload];
+    _player setVariable ["Scv_carriedPayload", _payload, true];
 };
