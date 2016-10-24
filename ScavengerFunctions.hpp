@@ -2,6 +2,11 @@ class CfgFunctions
 {
     class Scv
     {
+        class General
+        {
+            file = "scavenger_fnc";
+            class getNameIndex { };
+        }
         class Payload
         {
             file = "scavenger_fnc";

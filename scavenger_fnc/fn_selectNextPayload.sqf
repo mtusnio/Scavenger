@@ -19,8 +19,7 @@ if(isServer) then
     {
         private _selected = floor random (count _payloads);
         private _payload = _payloads select _selected;
-        private _strings = (vehicleVarName _payload) splitString "_";
-        private _payloadNum = parseNumber (_strings select ((count _strings) - 1));
+        private _payloadNum = [vehicleVarName _payload] call Scv_fnc_getNameIndex;
         
         [_payload, _activationDelay, _payloadNum] spawn {
             params ["_payload", "_activationDelay", "_payloadNum"];
