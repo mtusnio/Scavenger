@@ -38,5 +38,6 @@ if(isServer) then
     {
         _player setVariable ["Scv_carriedPayload", objNull, true];
         side group _player addScoreSide 100;
+        [_player] execVM "onPayloadDelivered.sqf"
     };
 };
