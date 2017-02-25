@@ -34,10 +34,11 @@ if(!isServer || !isDedicated) then
 
 if(isServer) then
 {
-    if(!isNull (_player getVariable ["Scv_carriedPayload", objNull])) then
+    private _payload = _player getVariable ["Scv_carriedPayload", objNull];
+    if(!isNull _payload) then
     {
         _player setVariable ["Scv_carriedPayload", objNull, true];
         side group _player addScoreSide 100;
-        [_player] execVM "onPayloadDelivered.sqf"
+        [_player, _payload] execVM "onPayloadDelivered.sqf"
     };
 };
