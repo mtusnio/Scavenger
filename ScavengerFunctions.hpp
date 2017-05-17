@@ -14,6 +14,7 @@ class CfgFunctions
             class deliverPayload { };
             class createPayloadList { };
             class selectNextPayload { };
+            class dropPayload { };
         };
 
         class Dropoff
