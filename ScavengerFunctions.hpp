@@ -15,6 +15,7 @@ class CfgFunctions
             class createPayloadList { };
             class selectNextPayload { };
             class dropPayload { };
+            class getCarriedPayload { };
         };
 
         class Dropoff
