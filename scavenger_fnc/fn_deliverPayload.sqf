@@ -1,17 +1,18 @@
 /*
-	Author: Michal Tusnio
+    Author: Michal Tusnio
 
-	Description:
-	Call on the player to deliver the carried payload
+    Description:
+    Call on the player to deliver the carried payload
 
-	Parameter(s):
-	0: Unit, player delivering the payload
+    Parameter(s):
+    0: Unit, player delivering the payload
+    1: Dropoff point
     
-	Returns:
-	None
+    Returns:
+    None
 */
 
-if (!params ["_player"]) exitWith {};
+if (!params ["_player", "_dropoff"]) exitWith {};
 
 if(!isServer || !isDedicated) then
 {
@@ -39,6 +40,6 @@ if(isServer) then
     {
         _player setVariable ["Scv_carriedPayload", objNull, true];
         side group _player addScoreSide 100;
-        [_player, _payload] execVM "events\onPayloadDelivered.sqf"
+        [_player, _payload, _dropoff] execVM "events\onPayloadDelivered.sqf"
     };
 };
