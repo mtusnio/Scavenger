@@ -19,7 +19,7 @@ private _payload = [_unit] call Scv_fnc_getCarriedPayload;
 
 if(isNull _payload) exitWith { false; };
 
-_unit setVariable ["Scv_carriedPayload", null, true];
+_unit setVariable ["Scv_carriedPayload", objNull, true];
 _payload setPos (getPos _unit);
 
 [_unit, _payload] execVM "events\onPayloadDropped.sqf";
