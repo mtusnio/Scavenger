@@ -85,4 +85,14 @@ class Params
         function = "BIS_fnc_paramDaytime";
         isGlobal = 1;
     };
+
+
+    class Debug
+    {
+        title = "Debug";
+        texts[] = {"Off", "On"};
+        values[] = {0,1};
+        default = 0;
+        file = "params\enableDebug.sqf";
+    };
 };
