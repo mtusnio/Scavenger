@@ -22,6 +22,6 @@ if(isNull _payload) exitWith { false; };
 _unit setVariable ["Scv_carriedPayload", null, true];
 _payload setPos (getPos _unit);
 
-[_unit, _payload] execVM "events/onPayloadDropped.sqf";
+[_unit, _payload] execVM "events\onPayloadDropped.sqf";
 
 true;
