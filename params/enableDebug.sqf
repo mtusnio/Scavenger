@@ -10,6 +10,11 @@ scv_debug_damage_handler = {
     0;
 };
 
+[] spawn {
+    sleep 0.5;
+    setPlayerRespawnTime 1;
+};
+
 if(!isMultiplayer) then {
     player addEventHandler ["HandleDamage", scv_debug_damage_handler];
 }
