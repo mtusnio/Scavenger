@@ -1,4 +1,4 @@
-PAYLOAD_ACTIVATION_TIME = [500, 30] select scv_debug;
+PAYLOAD_ACTIVATION_TIME = [500, 3] select scv_debug;
 publicVariable "PAYLOAD_ACTIVATION_TIME";
 PAYLOAD_MAXIMUM_COUNT = 10;
 publicVariable "PAYLOAD_MAXIMUM_COUNT";
