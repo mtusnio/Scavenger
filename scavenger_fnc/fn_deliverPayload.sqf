@@ -2,7 +2,7 @@
     Author: Michal Tusnio
 
     Description:
-    Call on the player to deliver the carried payload
+    Delivers specified payload
 
     Parameter(s):
     0: Unit, player delivering the payload

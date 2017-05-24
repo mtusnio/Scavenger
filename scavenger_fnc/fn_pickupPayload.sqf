@@ -2,7 +2,7 @@
 	Author: Michał Tuśnio
 
 	Description:
-	Call on all clients and server whenever payload is picked up
+	Picks up provided payload
 
 	Parameter(s):
 	0: Unit which picked the payload up

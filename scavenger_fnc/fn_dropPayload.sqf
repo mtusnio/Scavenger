@@ -2,7 +2,7 @@
 	Author: Michał Tuśnio
 
 	Description:
-	Call on server to make the unit drop payload
+	Makes a unit drop the payload
     
 	Parameter(s):
 	0: Unit with payload

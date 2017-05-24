@@ -2,7 +2,7 @@
     Author: Michal Tusnio
 
     Description:
-    Call on the server to initialise an object as the payload dropoff point
+    Use in object's init to initialise a drop off point
 
     Parameter(s):
     0: Object which will be the dropoff point
