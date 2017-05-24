@@ -1,3 +1,3 @@
 params ["_unit", "_payload"];
 
-[_unit, "Dropped payload!"] remoteExec ["globalChat", -2];
+["Payload dropped!"] remoteExec ["systemChat", [0,-2] select isDedicated];
